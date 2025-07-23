@@ -4,3 +4,6 @@
 <h1 align="center">Linqet · 灵雀快搭</h1>
 <p align="center">由 AI 驱动，专为营销人员、中小商户、独立开发者打造的全场景可视化平台，快速创建活动页面、海报、H5 专区、微商城等场景化应用，10 分钟完成设计、部署与上线，让市场无需等待代码！</p>
 
+## 许可证
+
+[Apache 2.0 License](./LICENSE) © 2025-PRESENT [Linqet](https://github.com/linqet/)
