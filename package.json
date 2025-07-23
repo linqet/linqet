@@ -1,0 +1,34 @@
+{
+  "name": "@linqet/monorepo",
+  "version": "0.0.0",
+  "packageManager": "pnpm@10.6.5",
+  "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "prepare": "simple-git-hooks",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "release": "bumpp -r"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^4.17.0",
+    "@commitlint/config-conventional": "^19.8.1",
+    "bumpp": "^10.2.0",
+    "commitlint": "^19.8.1",
+    "conventional-changelog": "^7.1.1",
+    "eslint": "^9.31.0",
+    "lint-staged": "^16.1.2",
+    "simple-git-hooks": "^2.13.0"
+  },
+  "simple-git-hooks": {
+    "commit-msg": "npx commitlint --edit",
+    "pre-commit": "pnpm lint-staged"
+  },
+  "lint-staged": {
+    "*": "pnpm lint:fix"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  }
+}
