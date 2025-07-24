@@ -1,0 +1,47 @@
+html.dark {
+  color-scheme: dark;
+}
+
+html:not(.dark) {
+  color-scheme: light;
+}
+
+html,
+body,
+#app {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  --at-apply: background-color text-color text-op-75 lh-normal;
+}
+
+a {
+  --at-apply: op-75 hover:op-100;
+  text-decoration: underline;
+}
+
+p {
+  --at-apply: lh-normal op-75 text-center;
+}
+
+h1 {
+  --at-apply: text-6 font-bold my-5;
+}
+
+#nprogress {
+  pointer-events: none;
+}
+
+#nprogress .bar {
+  --at-apply: bg-primary;
+  opacity: 0.75;
+  position: fixed;
+  z-index: 1031;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+}

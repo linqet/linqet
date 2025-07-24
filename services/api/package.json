@@ -1,5 +1,5 @@
 {
-  "name": "@linqet/server",
+  "name": "@linqet/api",
   "version": "0.0.0",
   "packageManager": "pnpm@10.6.5"
 }
