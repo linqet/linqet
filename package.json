@@ -1,6 +1,6 @@
 {
   "name": "@linqet/monorepo",
-  "version": "0.0.0",
+  "private": true,
   "packageManager": "pnpm@10.6.5",
   "engines": {
     "pnpm": ">=9.0"
@@ -8,6 +8,10 @@
   "scripts": {
     "preinstall": "npx only-allow pnpm",
     "prepare": "simple-git-hooks",
+    "docs:dev": "pnpm --filter @linqet/docs dev",
+    "docs:build": "pnpm --filter @linqet/docs build",
+    "docs:generate": "pnpm --filter @linqet/docs generate",
+    "docs:preview": "pnpm --filter @linqet/docs preview",
     "typecheck": "pnpm -r --filter=!@linqet/monorepo run typecheck",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
