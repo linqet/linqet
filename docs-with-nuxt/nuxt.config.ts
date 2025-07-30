@@ -2,15 +2,20 @@
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
-  modules: [
-    '@element-plus/nuxt',
-  ],
+  modules: ['@element-plus/nuxt', '@unocss/nuxt', '@nuxtjs/color-mode', '@nuxt/icon'],
   elementPlus: {
-    /** Options */
   },
   css: [
-    '@/assets/css/main.css',
+    '@/styles/global.css',
   ],
+  icon: {
+    customCollections: [
+      {
+        prefix: 'app-icon',
+        dir: './assets/icons',
+      },
+    ],
+  },
   app: {
     head: {
       title: 'Linqet · 灵雀快搭 - AI 驱动的全场景可视化平台',
