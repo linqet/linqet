@@ -1,3 +1,3 @@
 <template>
-  <h1>123</h1>
+  <ElButton type="primary">开始使用</ElButton>
 </template>
